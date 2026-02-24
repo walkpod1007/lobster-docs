@@ -18,7 +18,7 @@
 | ID | 標題 | 狀態 | Raw URL |
 |----|------|------|---------|
 | SOP-000 | Opus 協作規範 | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-SOP-000-%E5%8D%94%E4%BD%9C%E8%A6%8F%E7%AF%84.md |
-| WO-001 | 補回 compaction 設定 | ❌ cancelled (wontfix) | — |
+| WO-001 | 補回 compaction 設定 | ❌ cancelled (wontfix) | https://gist.github.com/walkpod1007/9b2e6a45e33f7153ef06e6292b1448b7 |
 | WO-002 | merge SOP + SKILL 版本號 | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-WO-002-merge-sop.md |
 | WO-003 | lobster-vault 整合 Obsidian | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-WO-003-vault-integration.md |
 | WO-004 | workspace 清掃 Phase 1 | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-WO-004-workspace-cleanup.md |
