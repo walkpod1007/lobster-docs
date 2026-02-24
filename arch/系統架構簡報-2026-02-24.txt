@@ -1,0 +1,108 @@
+🦞 龍蝦系統架構 & 雙機協作規劃
+生成：2026-02-24 | CONFIDENTIAL
+
+═══════════════════════════════
+一、系統架構四層（住家德瑪）
+═══════════════════════════════
+
+LAYER 1 — AI 系統層 [System]
+  ~/.openclaw/workspace/  ← 主控台，正典
+    ├─ SOUL / AGENTS / MEMORY / IDENTITY（身份核心）
+    ├─ projects/line-experience-lab/（16 SKILL + 20 scripts + 13 templates）
+    └─ scripts/ + memory/ + backups/
+  ~/LobsterCore/  ← 備份映射節點（USB + Drive 中繼）
+
+LAYER 2 — 記憶層 [Memory]
+  Mem0（外部向量庫）：autoCapture + autoRecall  ✅ 運作中
+  workspace/memory/（session 日誌）  ✅
+  MEMORY.md（長期精華，手動維護）  ✅
+  compaction 設定：空白  ⚠️  待補回（160K threshold + memoryFlush）
+
+LAYER 3 — 人類知識層 [Human]
+  ~/Documents/Obsidian Vault/  ← 主 PKM，有 git 版控
+    ├─ 01_專案 / 02_長期 / 03_資源 / 04_封存（GTD 架構）
+    └─ _inbox / conversations / digest（AI 輸出匯入區）
+  ~/lobster-vault/  ← 龍蝦專屬（建議整合進 Obsidian _System/）
+    ├─ constitution/（SOUL、CONSTITUTION、SOPs）
+    └─ skills/（自製技能：context-recovery、night-cleaner 等）
+  vault-auto-commit：每小時 git commit  ✅（本次修復）
+
+LAYER 4 — 雲端備份層 [Cloud]
+  Google Drive: 🦞 龍蝦系統/lobstercore/
+  lobstercore-backup.sh：每 6 小時  ✅（本次新排程）
+  BOOTSTRAP.md：自動更新，一鍵還原 SOP  ✅
+
+═══════════════════════════════
+二、Cron 排程（修復後完整版）
+═══════════════════════════════
+
+每小時 (0 * * * *):
+  • vault-auto-commit.sh  → Obsidian Vault git 自動 commit  ✅ 剛修復
+  • rag/sync_v2.sh  → RAG 知識同步  ✅
+
+每 6 小時 (0 0,6,12,18 * * *):
+  • lobstercore-backup.sh  → SKILL+scripts 打包 → Google Drive  ✅ 剛排程
+
+每天 3AM (0 3 * * *):
+  • workspace-daily-backup.sh  → 本機 workspace 備份  ✅ 剛修復
+  • media-cleanup.sh  → 清除 7 天前 media-cache  ✅
+
+═══════════════════════════════
+三、可派工 AI 模型一覧
+═══════════════════════════════
+
+● lobster（德瑪）      claude-sonnet-4-6          主控，完整工具存取、LINE群組、記憶管理
+● gemini-flash（3 Flash） gemini-3-flash-preview   快速派工、掃描、批量任務、影片生成
+● gemini（3 Pro）      gemini-3-pro-preview         複雜推理、長文分析、深度研究
+● GPT                  gpt-5.3-codex                程式碼生成、debug、重構
+● opus（web Opus）     claude-opus-4-6              深度策略規劃、架構設計
+● minimax-m2.5         MiniMax-M2.5                 中文備用、長文處理
+● sonnet               claude-sonnet-4-6            同 lobster，可平行派工
+
+═══════════════════════════════
+四、雙機角色分工
+═══════════════════════════════
+
+住家德瑪（Mac mini）              辦公室小蝦（office Mac）
+• claude-sonnet-4-6              • lobster / gemini-flash
+• 主控台、記憶管理                • SKILL 開發、影片生成
+• LINE群組回應                    • LINE群組 B 回應
+• 雲端備份管理                    • 快速測試新功能
+• Mem0 已啟動 ✅                  • 靠近使用情境
+• 完整 workspace 存取             • 開發成果 push 至 Drive
+
+═══════════════════════════════
+五、同步共構流程（Drive 為同步樞紐）
+═══════════════════════════════
+
+Step 1：小蝦開發新 SKILL → lobstercore-backup 每 6 小時自動打包上 Drive
+Step 2：德瑪從 Drive 拉最新包 → 解壓覆蓋 line-experience-lab/ 目錄
+Step 3：驗證 SKILL 數量 + 跑 test handler → 確認功能 OK
+Step 4：德瑪開發成果同樣 backup → 小蝦下次拉就能用
+
+⚠️  Opus 核心提醒：兩機同時開發 → 最後寫入者勝問題
+解法 A：SKILL header 加版本號（# v1.3 2026-02-24）
+解法 B：建立 merge SOP —— 先 diff 再覆蓋，不直接 overwrite
+
+Mem0 目前各自獨立 → 長期需要共享 userId 或定期 export/import
+
+═══════════════════════════════
+六、待處理優先清單（P0→P3）
+═══════════════════════════════
+
+P0 🔴  補回 compaction 設定（160K + memoryFlush）← 影響穩定性，最優先
+P1 🟠  建立兩機 merge SOP + SKILL header 版本號機制
+P1 🟠  lobster-vault 整合進 Obsidian _System/ 區
+P2 🟡  Google Drive 雲端資料夾整理
+P2 🟡  Veo 影片生成改直接背景執行（繞過 sub-agent 逾時）
+P3 🟢  LINE SKILL 16 個逐一驗證（可派 Flash 自動跑）
+P3 🟢  Mem0 共享方案研究（德瑪 + 小蝦同 userId 或定期 sync）
+
+═══════════════════════════════
+附：Opus 協作文件規範 v1.0 重點
+═══════════════════════════════
+
+命名格式：COLLAB-{類型}-{序號}-{簡述}.md
+類型：WO（工單）/ ARCH（架構）/ REVIEW（審查）/ SPEC（規格）/ SOP（流程）
+流程：Opus 出文件 → 你存到 Drive collab/ → 龍蝦執行 → 回報
+共用資料夾：🦞 龍蝦系統/collab/（待建立）
