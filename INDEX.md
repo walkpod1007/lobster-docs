@@ -25,6 +25,8 @@
 | WO-005 | workspace 清掃執行 | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-WO-005-workspace-cleanup-exec.md |
 | HANDOFF-2026-02-24 | Session 交接摘要 | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/SESSION-HANDOFF-2026-02-24.md |
 | WO-006 | Phase 2 清掃 lobster-vault+LobsterCore | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-WO-006-phase2-cleanup.md |
+| WO-011 | Obsidian Vault .git 瘦身 | 🔄 in progress | — |
+| SPEC-001 | LINE 主動推播擴展提案 | 📝 draft / 待討論 | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/COLLAB-SPEC-001-line-push-expansion.md |
 ---
 
 ## 📖 SOP 流程文件 (sop/)
