@@ -24,7 +24,7 @@
 | WO-004 | workspace 清掃 Phase 1 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-004-workspace-cleanup.md |
 | WO-005 | workspace 清掃執行 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-005-workspace-cleanup-exec.md |
 | HANDOFF-2026-02-24 | Session 交接摘要 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/SESSION-HANDOFF-2026-02-24.md |
-| WO-006 | Phase 2 清掃 lobster-vault+LobsterCore | ready | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-006-phase2-cleanup.md |
+| WO-006 | Phase 2 清掃 lobster-vault+LobsterCore | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-006-phase2-cleanup.md |
 ---
 
 ## 📖 SOP 流程文件 (sop/)
