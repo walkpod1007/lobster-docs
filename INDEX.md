@@ -9,7 +9,7 @@
 
 | 檔案 | Raw URL |
 |------|---------|
-| 系統架構簡報 2026-02-24 | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/arch/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E7%B0%A1%E5%A0%B1-2026-02-24.txt |
+| 系統架構簡報 2026-02-24 | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/arch/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E7%B0%A1%E5%A0%B1-2026-02-24.txt |
 
 ---
 
@@ -17,21 +17,21 @@
 
 | ID | 標題 | 狀態 | Raw URL |
 |----|------|------|---------|
-| SOP-000 | Opus 協作規範 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-SOP-000-%E5%8D%94%E4%BD%9C%E8%A6%8F%E7%AF%84.md |
-| WO-001 | 補回 compaction 設定 | ready | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-001-compaction-restore.md |
-| WO-002 | merge SOP + SKILL 版本號 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-002-merge-sop.md |
-| WO-003 | lobster-vault 整合 Obsidian | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-003-vault-integration.md |
-| WO-004 | workspace 清掃 Phase 1 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-004-workspace-cleanup.md |
-| WO-005 | workspace 清掃執行 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-005-workspace-cleanup-exec.md |
-| HANDOFF-2026-02-24 | Session 交接摘要 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/SESSION-HANDOFF-2026-02-24.md |
-| WO-006 | Phase 2 清掃 lobster-vault+LobsterCore | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-006-phase2-cleanup.md |
+| SOP-000 | Opus 協作規範 | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-SOP-000-%E5%8D%94%E4%BD%9C%E8%A6%8F%E7%AF%84.md |
+| WO-001 | 補回 compaction 設定 | ready | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-WO-001-compaction-restore.md |
+| WO-002 | merge SOP + SKILL 版本號 | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-WO-002-merge-sop.md |
+| WO-003 | lobster-vault 整合 Obsidian | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-WO-003-vault-integration.md |
+| WO-004 | workspace 清掃 Phase 1 | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-WO-004-workspace-cleanup.md |
+| WO-005 | workspace 清掃執行 | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-WO-005-workspace-cleanup-exec.md |
+| HANDOFF-2026-02-24 | Session 交接摘要 | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/SESSION-HANDOFF-2026-02-24.md |
+| WO-006 | Phase 2 清掃 lobster-vault+LobsterCore | ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/COLLAB-WO-006-phase2-cleanup.md |
 ---
 
 ## 📖 SOP 流程文件 (sop/)
 
 | 檔案 | Raw URL |
 |------|---------|
-| SOP-MERGE-DUAL-MACHINE | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/sop/SOP-MERGE-DUAL-MACHINE.md |
+| SOP-MERGE-DUAL-MACHINE | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/sop/SOP-MERGE-DUAL-MACHINE.md |
 
 ---
 
