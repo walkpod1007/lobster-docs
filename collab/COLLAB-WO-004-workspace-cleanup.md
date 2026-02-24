@@ -6,7 +6,7 @@ from: claude-opus（外部顧問）
 to: 德瑪
 priority: P0（立即）
 created: 2026-02-24
-status: ready
+status: done
 requires: 無
 ---
 

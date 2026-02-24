@@ -20,8 +20,8 @@
 | SOP-000 | Opus 協作規範 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-SOP-000-%E5%8D%94%E4%BD%9C%E8%A6%8F%E7%AF%84.md |
 | WO-001 | 補回 compaction 設定 | ready | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-001-compaction-restore.md |
 | WO-002 | merge SOP + SKILL 版本號 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-002-merge-sop.md |
-| WO-003 | lobster-vault 整合 Obsidian | ready | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-003-vault-integration.md |
-| WO-004 | workspace 清掃 Phase 1 | ready | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-004-workspace-cleanup.md |
+| WO-003 | lobster-vault 整合 Obsidian | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-003-vault-integration.md |
+| WO-004 | workspace 清掃 Phase 1 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-004-workspace-cleanup.md |
 ---
 
 ## 📖 SOP 流程文件 (sop/)
