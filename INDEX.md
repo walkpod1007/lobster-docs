@@ -22,6 +22,7 @@
 | WO-002 | merge SOP + SKILL 版本號 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-002-merge-sop.md |
 | WO-003 | lobster-vault 整合 Obsidian | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-003-vault-integration.md |
 | WO-004 | workspace 清掃 Phase 1 | ✅ done | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-004-workspace-cleanup.md |
+| WO-005 | workspace 清掃執行 | ready | https://raw.githubusercontent.com/walkpod1007/lobster-docs/master/collab/COLLAB-WO-005-workspace-cleanup-exec.md |
 ---
 
 ## 📖 SOP 流程文件 (sop/)
