@@ -79,3 +79,41 @@ requires: 無（可獨立執行）
 - 列出所有需要更新的路徑引用（不直接改，回報清單）
 - vault-auto-commit 確認有 commit 到新的 _System 檔案
 - 把本工單執行結果 commit 進 GitHub lobster-docs/collab/
+
+## 執行紀錄
+
+**執行日期**：2026-02-24
+**執行機器**：德瑪（Modema11434）
+**執行者**：Claude Sonnet 4.6（WO-003 Worker）
+
+### 完成清單
+
+- [x] Task 1：確認 _System/ 現有內容（CLI_Mentor/, SOP-inbox-wash.md, SOP-tasks-integration.md, workspace替身, FOUNDATION.md, PROTOCOL.md）
+- [x] Task 2：建立子資料夾 _System/constitution/, _System/skills/, _System/knowledge/
+- [x] Task 3：備份 lobster-vault → ~/lobster-vault.bak-20260224
+- [x] Task 4：複製內容（constitution/, skills/, knowledge/para/ → 對應 _System/ 目錄）
+- [x] Task 5：建立 ~/lobster-vault/MIGRATED.md
+- [x] Task 6：建立 ~/Documents/Obsidian Vault/_System/README.md
+- [x] Task 7：掃描路徑引用
+
+### 衝突 / 特殊處理
+
+- `~/lobster-vault/knowledge/obsidian` 是指向 Obsidian Vault 本體的 symlink，跳過（避免循環引用）
+- `~/lobster-vault/knowledge/para/` 的 Archives, Areas, Memory, Projects, Resources 子目錄皆為空，已複製結構
+
+### 需要更新的路徑清單
+
+掃描結果：
+
+| 位置 | 引用 lobster-vault | 需更新？ |
+|------|-------------------|---------|
+| ~/.openclaw/workspace/ 所有 scripts | **無引用** | 不需要 |
+| crontab -l | **無引用**（有 lobstercore-backup.sh，不同） | 不需要 |
+| BOOTSTRAP.md | 未找到此檔案 | N/A |
+
+**結論**：目前無任何外部引用需要更新路徑。lobster-vault 可安全標記為 MIGRATED。
+
+### 問題 / 注意事項
+
+- `~/Documents/Obsidian Vault/_System/` 已有 FOUNDATION.md 和 PROTOCOL.md（0 byte 空檔），不確定用途，未動
+- `~/lobster-vault/knowledge/` 含有 symlink，已跳過，建議後續確認是否需要在 _System/knowledge/ 建立等效連結
