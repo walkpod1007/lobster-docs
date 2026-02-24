@@ -6,7 +6,7 @@ from: claude-opus（外部顧問）
 to: 德瑪
 priority: P1（本週）
 created: 2026-02-24
-status: ready
+status: done
 requires: COLLAB-WO-001 完成（compaction 補回）
 ---
 

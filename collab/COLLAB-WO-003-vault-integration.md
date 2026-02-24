@@ -3,7 +3,7 @@ type: WO
 id: COLLAB-WO-003
 title: lobster-vault 整合進 Obsidian _System 區 + 知識架構統一
 from: claude-opus（外部顧問）
-to: 小蝦
+to: 德瑪
 priority: P1（本週）
 created: 2026-02-24
 status: ready
