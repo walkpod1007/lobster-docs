@@ -28,6 +28,7 @@
 | WO-010 | 記憶機制偵察（體感版） | ✅ done | https://gist.github.com/walkpod1007/b9bb9eb29fd8459f6cb16d43f0a3d497 |
 | WO-011 | Obsidian Vault .git 瘦身 | ✅ done | https://gist.github.com/walkpod1007/a7a840870d0323e3caf20fd0fb4290d7 |
 | WO-012 | Archive-20260218 內容偵察 | ✅ done | https://gist.github.com/walkpod1007/a0911ff403ef04f5059519d085b39fda |
+| WO-013 | Phase 4 清掃執行（A~L 全砍） | ✅ done | https://gist.github.com/walkpod1007/b02fea8830e6cf58bee85a0a5b073e3c |
 | SPEC-001 | LINE 主動推播擴展提案 | 📝 draft / 待討論 | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/COLLAB-SPEC-001-line-push-expansion.md |
 ---
 
