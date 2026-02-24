@@ -74,3 +74,43 @@ changelog: 初始版本
 - SOP-MERGE-DUAL-MACHINE.md 存在於 lobster-vault/sop/
 - merge-from-drive.sh 框架腳本存在
 - 把完成的 SOP commit 進 GitHub lobster-docs/sop/
+
+---
+
+## 執行紀錄
+
+**執行日期**：2026-02-24
+**執行者**：Claude Sonnet 4.6（Task ID: cc-20260224-112401-7636）
+
+### 完成清單
+
+- [x] **Task 1：SKILL Header 版本號規範**
+  - 掃描路徑：`/Users/Modema11434/.openclaw/workspace/projects/line-experience-lab/skills/`
+  - 結果：指定路徑不存在（`line-experience-lab/skills/` 子目錄不存在）
+  - 實際 SKILL.md 位置：`/Users/Modema11434/lobster-vault/skills/` （38 個 SKILL）
+  - 狀態：lobster-vault/skills/ 中的 SKILL.md 均已有 YAML frontmatter，**全部跳過**（符合「如果已有就跳過」規則）
+
+- [x] **Task 2：建立 Merge SOP 文件**
+  - 建立：`/Users/Modema11434/lobster-vault/sop/SOP-MERGE-DUAL-MACHINE.md`
+  - 內容：拉取流程、衝突處理規則、推送流程、安全規則
+  - 狀態：完成
+
+- [x] **Task 3：建立 merge 框架腳本**
+  - 建立：`/Users/Modema11434/.openclaw/workspace/scripts/merge-from-drive.sh`
+  - 內容：6 步驟框架（備份、下載、解壓、Diff、合併、驗證）+ 流程註解
+  - 狀態：框架完成，具體 Drive 整合待實作
+
+- [x] **Task 4：commit SOP 到 GitHub**
+  - 複製 SOP 到 `/tmp/lobster-docs/sop/`
+  - git commit: `aad27c7` "Add SOP: dual-machine merge flow"
+  - git push → `walkpod1007/lobster-docs` master
+  - 狀態：完成
+
+- [x] **Task 5：更新本執行紀錄並 push**
+  - 狀態：進行中
+
+### 遇到問題
+
+1. **指定的 skills 路徑不存在**：Task 1 要求掃描 `line-experience-lab/skills/`，但此路徑不存在。實際 SKILL.md 在 `lobster-vault/skills/` 下的各子目錄中。已如實回報，未強行建立目錄。
+
+2. **SKILL.md 格式差異**：現有 SKILL.md 已有 YAML frontmatter（用 `name:` 而非 `skill:`，無 `updated:` 和 `changelog:` 欄位）。根據「如果已有就跳過」的規則，全部跳過，未強行覆蓋。如需統一格式，需另行規劃遷移工作。
