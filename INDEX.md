@@ -1,7 +1,7 @@
 # 🦞 lobster-docs 檔案索引
 
 > 給 web Opus 用：直接點 raw URL 即可讀取每份文件。
-> 更新：2026-02-24 | 由德瑪維護
+> 更新：2026-02-26 | 由德瑪維護
 
 ---
 
@@ -45,3 +45,4 @@
 
 - Gist 連結索引：https://gist.github.com/walkpod1007/c95d03df575dd22b84ae0fa40f5457d0
 - Repo 首頁：https://github.com/walkpod1007/lobster-docs
+| WO-024 | Intent-First 媒體流程設計（圖片+語音 0 Push 方案）| 🔵 設計確認，待執行 | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/WO-024-intent-first-media-flow.md |
