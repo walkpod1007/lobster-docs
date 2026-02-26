@@ -45,4 +45,4 @@
 
 - Gist 連結索引：https://gist.github.com/walkpod1007/c95d03df575dd22b84ae0fa40f5457d0
 - Repo 首頁：https://github.com/walkpod1007/lobster-docs
-| WO-024 | Intent-First 媒體流程設計（圖片+語音 0 Push 方案）| 🔵 設計確認，待執行 | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/WO-024-intent-first-media-flow.md |
+| WO-024 | Intent-First 媒體流程設計（圖片+語音 0 Push 方案）| ✅ done | https://cdn.jsdelivr.net/gh/walkpod1007/lobster-docs@master/collab/WO-024-intent-first-media-flow.md |
